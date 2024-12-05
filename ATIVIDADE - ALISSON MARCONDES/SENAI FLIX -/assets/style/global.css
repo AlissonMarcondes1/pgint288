@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=OpenSans:ital,wght@0,300..800;1,300..800&display=swap'); /* Importa as fontes Montserrat e Open Sans do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open Sans:ital,wght@0,300..800;1,300..800&display=swap'); /* Repetição da importação das fontes */
+
+/* Estilos globais para todos os elementos */
+*{ 
+    margin: 0px; /* Remove margens padrão */
+    padding: 0px; /* Remove o padding padrão */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo do tamanho dos elementos */
+    font-size: 14px; /* Define o tamanho da fonte como 14px */
+    font-family: "Open Sans"; /* Define a fonte padrão como Open Sans */
+    outline: none;
+}
+
+/* Comentado - Responsividade para telas pequenas (máximo 600px) */
+/* @media screen and (max-width: 600px) { 
+    *{ 
+        font-size: 8px !important; /* Reduz o tamanho da fonte para 8px em telas pequenas */
+    
+
+header {
+    position: absolute; /* Faz o header sobrepor outros elementos na página */
+    width: 100%; /* Define a largura do header como 100% da tela */
+    background-color: black; /* Define o fundo do header como preto */
+    padding: 15px; /* Adiciona 15px de padding dentro do header */
+    display: flex; /* Define o modelo de layout como flexbox */
+    justify-content: space-between; /* Distribui o conteúdo do header com espaçamento entre os itens */
+    background: rgb(0,0,0); /* Define a cor de fundo como preta */
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,0.804359243697479) 0%, rgba(255,255,255,0) 100%); /* Gradiente para navegadores Mozilla */
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.804359243697479) 0%, rgba(255,255,255,0) 100%); /* Gradiente para navegadores WebKit */
+    background: linear-gradient(180deg, rgba(0,0,0,0.804359243697479) 0%, rgba(255,255,255,0) 100%); /* Gradiente para navegadores modernos */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1); /* Gradiente para navegadores antigos do Internet Explorer */
+}
+
+header .title a {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+header nav a {
+    color: white; /* Define a cor dos links dentro do <nav> como branca */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin-left: 60px; /* Adiciona 60px de espaço à esquerda dos links */
+}
+
+.banner {
+    background-image: url("../imgs/O-Mal-Que-Nos-Habita-o-filme-de-terror-argentino-estreia-no-Streaming.jpg"); /* Define a imagem de fundo do banner */
+    background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço do banner */
+    background-position: center; /* Centraliza a imagem de fundo */
+    width: 100vw; /* Define a largura do banner como 100% da largura da janela de visualização */
+    height: 100vh; /* Define a altura do banner como 100% da altura da janela de visualização */
+
+    display: flex; /* Usa o layout flexbox para os itens dentro do banner */
+    align-items: flex-end; /* Alinha os itens no final (parte inferior) do banner */
+    padding-left: 95px; /* Adiciona 97px de padding à esquerda do conteúdo dentro do banner */
+    padding-bottom: 167px; /* Adiciona 167px de padding na parte inferior do conteúdo dentro do banner */
+}
+
+.banner h1 {
+    color: white; /* Define a cor do texto do <h1> como branca */
+    font-size: 3em; /* Define o tamanho da fonte do <h1> como 3 vezes o tamanho da fonte normal */
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
+.banner p {
+    color: white; /* Define a cor do texto do <p> como branca */
+    width: 299px; /* Define a largura do <p> como 299px */
+    font-family: Montserrat; /* Define a fonte do <p> como Montserrat */
+}
+
+.Filmes-series {
+
+    width: 100%;
+    height: auto;
+    background-color: black;
+    min-height: 200px;
+    font-family: "Open Sans";
+    color: white;
+    padding: 15px;
+    padding-left: 95px;
+    padding-right: 95px;
+
+
+} 
+
+.Filmes-series .inputs {
+
+    margin-bottom: 10px;
+    display: flex;
+    
+
+
+}
+
+.Filmes-series .inputs label {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+
+}
+
+.Filmes-series .inputs label input, select {
+
+    width: 250px;
+    margin-top: 10px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 7px 0px 0px 7px;
+    border-right: none;
+    padding: 5px;
+
+}
+
+.borda-genero {
+
+    border: 1px solid white;
+    border-radius: 7px; /* Arredonda os cantos */
+
+}
+
+.inputs .pesquisa1 {
+    
+    display: flex;
+
+
+}
+
+.trailer1 {
+
+    margin-top: 40px;
+    padding-left: 120px;
+    width: 100%;
+    padding-right: 120px;
+    background-color: black;
+
+}
+
+    
+
+.inputs .pesquisa1 img {
+
+    width: 30px;
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+    border-left: none;
+    border-radius: 0px 7px 7px 0px;
+    
+}
+
+.Filmes-series .card-container {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.Filmes-series .card1 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/prison-break.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+    
+
+}
+
+.Filmes-series .card2 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/91d053F2aKL._AC_UF894\,1000_QL80_.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.Filmes-series .card3 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/a-nuvem-critica-filme-netflix-poster-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.Filmes-series .card4 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/MV5BYzM5ZWMxOGEtZjEyMC00YjQ0LThiYjEtZjVkZGEzN2NlOGEwXkEyXkFqcGc@._V1_.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.Filmes-series .card5 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/20303823.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.Filmes-series .card6 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/filmes_16312_coringa-2-poster.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.Filmes-series .card7 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/image.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.Filmes-series .card8 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/a10c0487d3b872e355e7987a1da5b2dc.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.Filmes-series .card9 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/1566768.png-c_310_420_x-f_jpg-q_x-xxyxx.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.Filmes-series .card10 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/vibezz_780654008.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+footer {
+
+    width: 100%;
+    height: auto;
+    background-color: black;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+footer p {
+
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+footer .icons-container {
+
+    display: flex;
+
+}
+
+footer .icons-container img {
+
+    height: 30px;
+    margin-right: 20px;
+}
+
+
+
+.detalhe1 {
+
+
+    width: 200vh;
+    height: auto;
+    background-color: black;
+    min-height: 200px;
+    font-family: "Open Sans";
+    color: white;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 95px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 100px;
+    
+
+}
+
+.detalhe {
+
+
+    width: 200vh;
+    height: auto;
+    background-color: black;
+    min-height: 200px;
+    font-family: "Open Sans";
+    color: white;
+    padding-left: 40px;
+    padding-right: 95px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 100px;
+
+}
+
+.detalhe h1 {
+
+    color: white; 
+    padding-left: 150px;
+    font-size: 30px;
+    
+
+
+}
+
+.detalhe p {
+
+    color: white;
+    padding-left: 15px;
+    width: 700px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+.teste {
+
+    display: flex;
+
+}
+
+.classificacao {
+
+    display: flex;
+    padding-left: 150px;
+    padding-top: 10px;
+    
+    
+
+}
+
+.classificacao img {
+
+    height: 50px;
+
+}
+
+.duracao {
+
+    display: flex;
+    padding-left: 130px;
+    padding-top: 10px;
+
+
+}
+
+.sinopse {
+
+    display: flex;
+    padding-left: 130px;
+    padding-top: 10px;
+
+    
+}
+
+.elenco {
+
+    width: 200vh;
+    height: auto;
+    background-color: black;
+    min-height: 200px;
+    font-family: "Open Sans";
+    color: white;
+    padding-left: 40px;
+    padding-right: 95px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 100px;
+    padding: 100px;
+    padding-left: 100px;
+
+
+}
+.elenco .card-elenco {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+
+}
+.elenco .card1 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/rick\ the\ walking\ dead.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+
+
+}
+
+.elenco .card2 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/michone.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+
+
+}
+
+.elenco .card3 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/glenn.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+
+
+}
+
+.elenco .card4 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/maggie\ the\ waking\ dead.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+
+
+}
+
+.elenco .card5 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/daryl\ dixon.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+
+
+}
+
+.elenco .card6 {
+
+    width: 80px;
+    height: 150px;
+    background-image: url(../imgs/negan\ the\ walking\ dead.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+
+
+}
+
+body {
+
+    background-color: black;
+
+}
+
+@media (max-width: 760px) {
+
+.banner {
+
+    padding-left: 15px;
+    padding-right: 25px;
+    padding-bottom: 35px;
+}
+
+.banner p {
+
+    font-size: 20px;
+    width: 100%;
+    text-align: justify;
+
+}
+
+.Filmes-series {
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.Filmes-series .inputs {
+
+    flex-wrap: wrap;
+
+}
+
+.Filmes-series .inputs label {
+
+    margin-bottom: 10px;
+
+
+}
+
+.Filmes-series .card-container {
+
+    flex-wrap: wrap;
+
+}
+
+.Filmes-series .card1,
+.Filmes-series .card2,
+.Filmes-series .card3,
+.Filmes-series .card4,
+.Filmes-series .card5,
+.Filmes-series .card6,
+.Filmes-series .card7,
+.Filmes-series .card8,  
+.Filmes-series .card9,
+.Filmes-series .card10 {
+
+    margin-right: 0px;
+
+}
+
+
+
+.card-container .card {
+
+    width: 48%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+
+
+    
+}
+}

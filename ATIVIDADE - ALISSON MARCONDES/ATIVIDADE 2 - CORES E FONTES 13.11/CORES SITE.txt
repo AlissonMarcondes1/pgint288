@@ -1,0 +1,7 @@
+Fundo: #121212
+Título Principal: Branco ou #E1E1E1.
+Links e Navegação: #505050
+Botões de Ação: #1A3C6D (azul profundo )
+
+
+
